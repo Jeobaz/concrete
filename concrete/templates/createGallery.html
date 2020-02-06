@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    {% load static %}
+    <meta name="viewport" content="initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Новая галерея</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <!--Custom style-->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.min.css'%}" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="{% static 'css/mdb.min.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container justify-content-center">
+        <form class="md-form" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="file-field big">
+                <a class="btn-floating btn-lg mt-0 float-left">
+                    <i class="fas fa-file brown darken-2"></i>
+                    <input type="file" name="files" multiple>
+                </a>
+                <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text" placeholder="Upload one or more files">
+                </div>
+                <input type="submit" class="btn btn-success" value="load">
+            </div>
+        </form>
+    </div>
+
+
+    <!--  SCRIPTS  -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="{%static 'js/jquery-3.3.1.min.js'%}"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="{%static 'js/popper.min.js'%}"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="{%static 'js/bootstrap.min.js'%}"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="{%static 'js/mdb.min.js'%}"></script>
+    <script>
+        // MDB Lightbox Init
+        $(function () {
+            $("#mdb-lightbox-ui").load("{%static 'mdb-addons/mdb-lightbox-ui.html'%}");
+        })
+        new WOW().init();
+    </script>
+</body>
+
+</html>
