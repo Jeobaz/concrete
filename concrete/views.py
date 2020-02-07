@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from concrete.decorators import admin_required
 from concrete.models import AlbumImage
 
@@ -20,14 +20,13 @@ def createGallery(request):
         return render(request, 'createGallery.html')
         
         
-def test(request):
+def send(request):
     from django.core.mail import send_mail
-    images = AlbumImage.objects.all()
     send_mail(
-        'Subject here',
-        'Here is the message.',
+        "Новая заявка с качайбетон.рф",
+        f"Завяка от: {request.POST['email'] }, \nИмя: {request.POST['name'] }, \nТелефон: {request.POST['tel'] }  \n" + "Текст заявки: " + request.POST['message'],
         'sender@xn--80aadqsd0ah9a8b.xn--p1ai',
-        ['kirill.manov@list.ru'],
+        ['709090@inbox.ru'],
         fail_silently=False,
     )
-    return render(request, 'index.html', context={'images': images})
+    return redirect('index')

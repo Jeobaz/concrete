@@ -5,6 +5,6 @@ from concrete import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
-    path('test/', views.test, name='test'),
+    path('send/', views.send, name='send'),
     path('create/', views.createGallery, name='createGallery'),
 ]
