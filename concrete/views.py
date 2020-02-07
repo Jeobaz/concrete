@@ -18,3 +18,16 @@ def createGallery(request):
             obj = AlbumImage(image = el)
             obj.save()
         return render(request, 'createGallery.html')
+        
+        
+def test(request):
+    from django.core.mail import send_mail
+    images = AlbumImage.objects.all()
+    send_mail(
+        'Subject here',
+        'Here is the message.',
+        'sender@xn--80aadqsd0ah9a8b.xn--p1ai',
+        ['kirill.manov@list.ru'],
+        fail_silently=False,
+    )
+    return render(request, 'index.html', context={'images': images})
