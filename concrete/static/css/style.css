@@ -2,7 +2,7 @@
 @media (max-width: 575px){
     .background {
         /* The image used */
-        background-color: #e8e8e8;
+        background-color: #f9f9f9;
     }
     html {
         font-size: 0.75rem !important;
@@ -65,7 +65,7 @@
 @media (min-width: 576px) and (max-width: 767px){
     .background {
         /* The image used */
-        background-color: #e8e8e8;
+        background-color: #f9f9f9;
     
         /* Full height */
         height: 100%;
@@ -83,7 +83,7 @@
 @media (min-width: 768px) and (max-width: 991px){
     .background {
         /* The image used */
-        background-color: #e8e8e8;
+        background-color: #f9f9f9;
     }
     html {
         font-size: 1.0rem !important;
@@ -94,7 +94,7 @@
 @media (min-width: 992px) and (max-width: 1025px) {
     .background {
         /* The image used */
-        background-color: #e8e8e8;
+        background-color: #f9f9f9;
     }
     html {
         font-size: 1.2rem !important;
@@ -189,7 +189,7 @@ html {
 }
 
 #services, #works, #contacts{
-    background-color: #e8e8e8;
+    background-color: #f9f9f9;
 }
 .flex-1 {
     align-items: stretch;

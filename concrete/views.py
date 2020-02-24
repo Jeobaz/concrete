@@ -3,8 +3,9 @@ from concrete.decorators import admin_required
 from concrete.models import AlbumImage
 
 def index(request):
-    images = AlbumImage.objects.all()
-    print(images)
+    #images = AlbumImage.objects.all()
+    images = AlbumImage.objects.all().order_by('-id')[:6][::-1]
+    #print(images)
     # for img in images:
     #     print(img.url)
     return render(request, 'index.html', context={'images': images})
