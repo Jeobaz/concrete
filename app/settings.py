@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'concrete',
     'imagekit',
+    'captcha',
 ]
 
 MIDDLEWARE = [
@@ -136,4 +137,9 @@ EMAIL_HOST = 'smtp.beget.com'
 EMAIL_HOST_USER = 'sender@xn--80aadqsd0ah9a8b.xn--p1ai'
 EMAIL_HOST_PASSWORD = 'VROqok59'
 EMAIL_PORT = 2525
+
+RECAPTCHA_PUBLIC_KEY = '6LeubfYUAAAAAAWppkoksL-3norNME0kUubqm9d9'
+RECAPTCHA_PRIVATE_KEY = '6LeubfYUAAAAAJGpQ6vy-AtBzJNlESywRi06Tln0'
+
+RECAPTCHA_SCORE_THRESHOLD = 0.9
 

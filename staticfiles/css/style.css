@@ -85,6 +85,10 @@
         /* The image used */
         background-color: #e8e8e8;
     }
+    #card3>.card-header{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     html {
         font-size: 1.0rem !important;
     }
@@ -187,7 +191,10 @@ body,
 html {
     height: 100%;
 }
-
+.carousel-indicators{
+    position: relative;
+    bottom: 100 !important;
+}
 #services, #works, #contacts{
     background-color: #e8e8e8;
 }

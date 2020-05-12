@@ -9,7 +9,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="shortcut icon" href="{% static 'img/logo/icon.png' %}" type="image/png">
     <title>Аренда бетононасоса — компания "КачайБетон"</title>
-    <meta name="description" content="Услуги аренды автобетононасоса, стационарного и с миксером по Тюмени и Тюменской области.">
+    <meta name="description"
+        content="Услуги аренды автобетононасоса, стационарного и с миксером по Тюмени и Тюменской области.">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
     <!--Custom style-->
@@ -37,33 +38,36 @@
                     <div class="modal-body mx-3">
                         <div class="md-form mb-5">
                             <i class="fas fa-user prefix grey-text"></i>
-                            <input type="text" id="form34" name="name" class="form-control" required>
+                            {{modalform.name}}
                             <label for="form34">Ваше имя</label>
                         </div>
 
                         <div class="md-form mb-5">
                             <i class="fas fa-envelope prefix grey-text"></i>
-                            <input type="email" id="form29" name="email" class="form-control validate" required>
+                            {{modalform.email}}
                             <label data-error="" data-success="OK" for="form29">Ваш email</label>
                         </div>
 
                         <div class="md-form">
                             <i class="fas fa-phone prefix grey-text"></i>
-                            <input type="tel" id="form29" name="tel" class="form-control">
+                            {{modalform.tel}}
                             <label for="form8">Ваш телефон
                                 (необязательно)</label>
                         </div>
 
                         <div class="md-form">
                             <i class="fas fa-pencil prefix grey-text"></i>
-                            <textarea type="text" id="form8" name="message" class="md-textarea form-control" rows="3"></textarea>
-                            <label for="form8">Ваше сообщение</label>
+                            {{modalform.message}}
+                            <label for="form7">Ваше сообщение</label>
                         </div>
-
+                        <div class="md-form pl-5">
+                            {{modalform.captcha}}
+                        </div>
                     </div>
+
                     <div class="modal-footer d-flex justify-content-center">
-                        <button class="btn btn-yellow">Отправить заявку <i
-                                class="fas fa-paper-plane-o ml-1"></i></button>
+                        <button class="btn btn-yellow" id='modalSubmit'>Отправить заявку
+                            <i class="fas fa-paper-plane-o ml-1"></i></button>
                     </div>
                 </form>
             </div>
@@ -191,18 +195,20 @@
             <div class="col-xl-10 col-lg-12 col-md-12 col-sm-12">
                 <h1 class="text-center font-weight-bold mt-5">Услуги</h1>
                 <div class="row justify-content-center">
-                    <div class="col-lg-4 col-md-4 col-sm-8 mb-1 mt-2 p-2">
+                    <div class="col-lg-4 col-md-4 col-sm-8 mb-1 mt-2 p-2" id="card1">
                         <div class="card">
                             <div class="card-header white">
                                 <h4 class="h4 my-2">Насос стационарный</h4>
                             </div>
                             <div class="card-body px-0">
-                                <div class="px-4">
+                                <div class="px-3 px-md-2 px-lg-3">
                                     <h2 class="h2"><strong>300 ₽ <span class="font-small">/м³</span></strong></h2>
                                     <ul class="list-unstyled pl-0">
                                         <li class="">Высота подачи <span class="">до 100м</span> </li>
                                         <li class="">Дальность подачи <span class="">до 300м</span></li>
                                         <li class="">Размер площадки <span class="">1,5 х 3м</span></li>
+                                        <br />
+
                                     </ul>
                                 </div>
                                 <!--Card image-->
@@ -218,18 +224,20 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-8 mb-1 mt-2 p-2">
+                    <div class="col-lg-4 col-md-4 col-sm-8 mb-1 mt-2 p-2" id="card2">
                         <div class="card">
                             <div class="card-header white">
                                 <h4 class="h4 my-2">Насос с миксером</h4>
                             </div>
                             <div class="card-body px-0">
-                                <div class="px-4">
+                                <div class="px-3">
                                     <h2 class="h2"><strong>300 ₽ <span class="font-small">/м³</span></strong></h2>
                                     <ul class="list-unstyled pl-0">
                                         <li class="">Высота подачи <span class="">до 25м</span> </li>
                                         <li class="">Размер площадки <span class="">4 х 5м</span></li>
                                         <br />
+                                        <li class="font-weight-bold">Минимальный объем <span class="">40м³ / 12000
+                                                ₽</span></li>
                                     </ul>
                                 </div>
                                 <div class="px-0">
@@ -247,18 +255,20 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-8 mb-1 mt-2 p-2">
+                    <div class="col-lg-4 col-md-4 col-sm-8 mb-1 mt-2 p-2" id="card3">
                         <div class="card">
-                            <div class="card-header white">
+                            <div class="card-header white px-md-2">
                                 <h4 class="h4 my-2">Автобетононасос</h4>
                             </div>
                             <div class="card-body px-0">
-                                <div class="px-4">
+                                <div class="px-3">
                                     <h2 class="h2"><strong>300 ₽ <span class="font-small">/м³</span></strong></h2>
                                     <ul class="list-unstyled pl-0">
                                         <li class="">Высота подачи <span class="">до 50м</span> </li>
                                         <li class="">Размер площадки <span class="">7 х 9м</span></li>
                                         <br />
+                                        <li class="font-weight-bold">Минимальный объем <span class="">50м³ / 15000
+                                                ₽</span></li>
                                     </ul>
                                 </div>
 
@@ -291,57 +301,129 @@
             <div class="col-xl-10 col-lg-12 col-md-12 col-sm-12">
                 <h1 class="text-center font-weight-bold mt-5">Наши работы</h1>
                 <div class="row">
+                    <!--Controls-->
+                    <div class="controls-top d-flex container align-items-center justify-content-center">
+                        <a class="btn-floating warning-color" href="#albumCarousel" data-slide="prev"><i
+                                class="fas fa-chevron-left"></i></a>
+                        <a class="btn-floating warning-color" href="#albumCarousel" data-slide="next"><i
+                                class="fas fa-chevron-right"></i></a>
+                    </div>
+                    <!--/.Controls-->
                     <div class="col-md-12">
-
                         <div id="mdb-lightbox-ui"></div>
 
-                        <div class="mdb-lightbox">
-                            <!-- {% for image in images %}
-                                <figure class="col-md-4">
-                                    <a href="{{image.image.url}}" data-size="1020x680">
-                                        <img alt="picture" src="{{image.image.url}}" class="img-fluid">
-                                    </a>
-                                </figure>
-                            {% endfor %} -->
+                        <div id="albumCarousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="mdb-lightbox">
+                                        <!-- {% for image in images %}
+                                        <figure class="col-md-4">
+                                            <a href="{{image.image.url}}" data-size="1020x680">
+                                                <img alt="picture" src="{{image.image.url}}" class="img-fluid">
+                                            </a>
+                                        </figure>
+                                    {% endfor %} -->
 
-                            <figure class="col-md-4">
-                                <a href="{% static 'img/slides/slide1.png' %}" data-size="1020x680">
-                                    <img alt="picture" src="{% static 'img/slides/slide1.png' %}" class="img-fluid">
-                                </a>
-                            </figure>
+                                        <figure class="col-md-4">
+                                            <a href="{% static 'img/slides/slide1.png' %}" data-size="1020x680">
+                                                <img alt="picture" src="{% static 'img/slides/slide1.png' %}"
+                                                    class="img-fluid">
+                                            </a>
+                                        </figure>
 
-                            <figure class="col-md-4">
-                                <a href="{% static 'img/slides/slide2.png' %}" data-size="1020x680">
-                                    <img alt="picture" src="{% static 'img/slides/slide2.png' %}" class="img-fluid" />
-                                </a>
-                            </figure>
+                                        <figure class="col-md-4">
+                                            <a href="{% static 'img/slides/slide2.png' %}" data-size="1020x680">
+                                                <img alt="picture" src="{% static 'img/slides/slide2.png' %}"
+                                                    class="img-fluid" />
+                                            </a>
+                                        </figure>
 
-                            <figure class="col-md-4">
-                                <a href="{% static 'img/slides/slide3.png' %}" data-size="1020x680">
-                                    <img alt="picture" src="{% static 'img/slides/slide3.png' %}" class="img-fluid" />
-                                </a>
-                            </figure>
+                                        <figure class="col-md-4">
+                                            <a href="{% static 'img/slides/slide3.png' %}" data-size="1020x680">
+                                                <img alt="picture" src="{% static 'img/slides/slide3.png' %}"
+                                                    class="img-fluid" />
+                                            </a>
+                                        </figure>
 
-                            <figure class="col-md-4">
-                                <a href="{% static 'img/slides/slide4.png' %}" data-size="1020x680">
-                                    <img alt="picture" src="{% static 'img/slides/slide4.png' %}" class="img-fluid" />
-                                </a>
-                            </figure>
+                                        <figure class="col-md-4">
+                                            <a href="{% static 'img/slides/slide4.png' %}" data-size="1020x680">
+                                                <img alt="picture" src="{% static 'img/slides/slide4.png' %}"
+                                                    class="img-fluid" />
+                                            </a>
+                                        </figure>
 
-                            <figure class="col-md-4">
-                                <a href="{% static 'img/slides/slide5.png' %}" data-size="1020x680">
-                                    <img alt="picture" src="{% static 'img/slides/slide5.png' %}" class="img-fluid" />
-                                </a>
-                            </figure>
+                                        <figure class="col-md-4">
+                                            <a href="{% static 'img/slides/slide5.png' %}" data-size="1020x680">
+                                                <img alt="picture" src="{% static 'img/slides/slide5.png' %}"
+                                                    class="img-fluid" />
+                                            </a>
+                                        </figure>
 
-                            <figure class="col-md-4">
-                                <a href="{% static 'img/slides/slide6.png' %}" data-size="1020x680">
-                                    <img alt="picture" src="{% static 'img/slides/slide6.png' %}" class="img-fluid" />
-                                </a>
-                            </figure>
+                                        <figure class="col-md-4">
+                                            <a href="{% static 'img/slides/slide6.png' %}" data-size="1020x680">
+                                                <img alt="picture" src="{% static 'img/slides/slide6.png' %}"
+                                                    class="img-fluid" />
+                                            </a>
+                                        </figure>
 
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="mdb-lightbox">
+                                        <!-- {% for image in images %}
+                                        <figure class="col-md-4">
+                                            <a href="{{image.image.url}}" data-size="1020x680">
+                                                <img alt="picture" src="{{image.image.url}}" class="img-fluid">
+                                            </a>
+                                        </figure>
+                                    {% endfor %} -->
+
+                                        <figure class="col-md-4">
+                                            <a href="{% static 'img/slides/slide7.png' %}" data-size="1020x680">
+                                                <img alt="picture" src="{% static 'img/slides/slide7.png' %}"
+                                                    class="img-fluid">
+                                            </a>
+                                        </figure>
+
+                                        <figure class="col-md-4">
+                                            <a href="{% static 'img/slides/slide8.png' %}" data-size="1020x680">
+                                                <img alt="picture" src="{% static 'img/slides/slide8.png' %}"
+                                                    class="img-fluid" />
+                                            </a>
+                                        </figure>
+
+                                        <figure class="col-md-4">
+                                            <a href="{% static 'img/slides/slide9.png' %}" data-size="1020x680">
+                                                <img alt="picture" src="{% static 'img/slides/slide9.png' %}"
+                                                    class="img-fluid" />
+                                            </a>
+                                        </figure>
+
+                                        <figure class="col-md-4">
+                                            <a href="{% static 'img/slides/slide10.png' %}" data-size="1020x680">
+                                                <img alt="picture" src="{% static 'img/slides/slide10.png' %}"
+                                                    class="img-fluid" />
+                                            </a>
+                                        </figure>
+
+                                        <figure class="col-md-4">
+                                            <a href="{% static 'img/slides/slide11.png' %}" data-size="1020x680">
+                                                <img alt="picture" src="{% static 'img/slides/slide11.png' %}"
+                                                    class="img-fluid" />
+                                            </a>
+                                        </figure>
+
+                                        <figure class="col-md-4">
+                                            <a href="{% static 'img/slides/slide12.png' %}" data-size="1020x680">
+                                                <img alt="picture" src="{% static 'img/slides/slide12.png' %}"
+                                                    class="img-fluid" />
+                                            </a>
+                                        </figure>
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -430,33 +512,35 @@
 
                             <div class="card">
                                 <div class="card-body px-4">
-                                    <form action="/send/" method="post">
+                                    <form action="/send/" id="modalForm" method="post">
                                         {% csrf_token %}
                                         <!-- Name -->
                                         <div class="md-form md-outline mt-0">
-                                            <input type="text" id="name" name="name" class="form-control" required>
+                                            {{modalform.name}}
                                             <label for="name">Ваше имя</label>
                                         </div>
                                         <!-- Telephone -->
                                         <div class="md-form md-outline">
-                                            <input type="text" id="telephone" name="tel" class="form-control">
+                                            {{modalform.tel}}
                                             <label for="telephone">Ваш телефон (необязательно)</label>
                                         </div>
                                         <!-- Email -->
                                         <div class="md-form md-outline">
-                                            <input type="text" id="email" name="email" class="form-control" required>
+                                            {{modalform.email}}
                                             <label for="email">Ваш Email</label>
                                         </div>
                                         <!-- Message -->
                                         <div class="md-form md-outline">
-                                            <textarea id="message" class="md-textarea form-control" name="message" rows="3"
-                                                required></textarea>
+                                            {{modalform.message}}
                                             <label for="message">Ваше сообщение</label>
                                         </div>
+                                        <div class="md-form">{{modalform.captcha}}</div>
 
                                         <button type="submit"
                                             class="btn btn-yellow btn-md btn-block ml-0 mb-0">Отправить
                                             заявку</button>
+
+
                                     </form>
                                 </div>
                             </div>
@@ -495,10 +579,14 @@
     <script type="text/javascript" src="{%static 'js/bootstrap.min.js'%}"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="{%static 'js/mdb.min.js'%}"></script>
+
     <script>
         // MDB Lightbox Init
         $(function () {
             $("#mdb-lightbox-ui").load("{%static 'mdb-addons/mdb-lightbox-ui.html'%}");
+            $('.carousel').carousel({
+                interval: false
+            })
         })
         new WOW().init();
     </script>

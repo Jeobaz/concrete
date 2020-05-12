@@ -1,237 +1,246 @@
 /* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575px){
-    .background {
-        /* The image used */
-        background-color: #f9f9f9;
-    }
-    html {
-        font-size: 0.75rem !important;
-    }
-    .pic1 {
-        /* The image used */
-        background-image: url("../img/pump1.jpg");
-    
-        /* Full height */
-        min-height: 11rem;
-        height: 100%;
-        /* Center and scale the image nicely */
-        background-position: left;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    
-    
-    .pic1 {
-        /* The image used */
-        background-image: url("../img/pump1.png");
-    
-        /* Full height */
-        min-height: 16rem !important;
-        height: 100%;
-        /* Center and scale the image nicely */
-        background-position: left;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    
-    .pic2 {
-        /* The image used */
-        background-image: url("../img/pump2.png");
-    
-        /* Full height */
-        min-height: 16rem !important;
-        height: 100%;
-        /* Center and scale the image nicely */
-        background-position: left;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    
-    .pic3 {
-        /* The image used */
-        background-image: url("../img/pump3.png");
-    
-        /* Full height */
-        min-height: 16rem !important;
-        height: 100%;
-        /* Center and scale the image nicely */
-        background-position: left;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+@media (max-width: 575px) {
+  .background {
+    /* The image used */
+    background-color: #f9f9f9;
+  }
+  html {
+    font-size: 0.75rem !important;
+  }
+  .pic1 {
+    /* The image used */
+    background-image: url("../img/pump1.jpg");
+
+    /* Full height */
+    min-height: 11rem;
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .pic1 {
+    /* The image used */
+    background-image: url("../img/pump1.png");
+
+    /* Full height */
+    min-height: 16rem !important;
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .pic2 {
+    /* The image used */
+    background-image: url("../img/pump2.png");
+
+    /* Full height */
+    min-height: 16rem !important;
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .pic3 {
+    /* The image used */
+    background-image: url("../img/pump3.png");
+
+    /* Full height */
+    min-height: 16rem !important;
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767px){
-    .background {
-        /* The image used */
-        background-color: #f9f9f9;
-    
-        /* Full height */
-        height: 100%;
-        /* Center and scale the image nicely */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .start, .services {
-        font-size: 1rem !important;
-    }
+@media (min-width: 576px) and (max-width: 767px) {
+  .background {
+    /* The image used */
+    background-color: #f9f9f9;
+
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .start,
+  .services {
+    font-size: 1rem !important;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 768px) and (max-width: 991px){
-    .background {
-        /* The image used */
-        background-color: #f9f9f9;
-    }
-    html {
-        font-size: 1.0rem !important;
-    }
+@media (min-width: 768px) and (max-width: 991px) {
+  .background {
+    /* The image used */
+    background-color: #f9f9f9;
+  }
+  .card-header {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  html {
+    font-size: 1rem !important;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1025px) {
-    .background {
-        /* The image used */
-        background-color: #f9f9f9;
-    }
-    html {
-        font-size: 1.2rem !important;
-    }
+  .background {
+    /* The image used */
+    background-color: #f9f9f9;
+  }
+  html {
+    font-size: 1.2rem !important;
+  }
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 1026px) and (max-width: 1199px) {
-    .background {
-        /* The image used */
-        background-image: url("../img/wallpapers/wallpaperTablet.png");
-    }
-    html {
-        font-size: 1.2rem !important;
-    }
+  .background {
+    /* The image used */
+    background-image: url("../img/wallpapers/wallpaperTablet.png");
+  }
+  html {
+    font-size: 1.2rem !important;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 1200px) and (max-width: 1366px){
-    .background {
-        /* The image used */
-        background-image: url("../img/wallpapers/wallpaper.png");
-    
-        /* Full height */
-        height: 100%;
-        /* Center and scale the image nicely */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    html {
-        font-size: 1rem !important;
-    }
+@media (min-width: 1200px) and (max-width: 1366px) {
+  .background {
+    /* The image used */
+    background-image: url("../img/wallpapers/wallpaper.png");
+
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  html {
+    font-size: 1rem !important;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 1367px) and (max-width: 1440px){
-    .background {
-        /* The image used */
-        background-image: url("../img/wallpapers/wallpaper.png");
-    
-        /* Full height */
-        height: 100%;
-        /* Center and scale the image nicely */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    html {
-        font-size: 1.15rem !important;
-    }
+@media (min-width: 1367px) and (max-width: 1440px) {
+  .background {
+    /* The image used */
+    background-image: url("../img/wallpapers/wallpaper.png");
+
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  html {
+    font-size: 1.15rem !important;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 1441px) and (max-width: 1680px){
-    .background {
-        /* The image used */
-        background-image: url("../img/wallpapers/wallpaper.png");
-    
-        /* Full height */
-        height: 100%;
-        /* Center and scale the image nicely */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    html {
-        font-size: 1.0rem !important;
-    }
+@media (min-width: 1441px) and (max-width: 1680px) {
+  .background {
+    /* The image used */
+    background-image: url("../img/wallpapers/wallpaper.png");
+
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  html {
+    font-size: 1rem !important;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1681px) {
-    .background {
-        /* The image used */
-        background-image: url("../img/wallpapers/wallpaper.png");
-    
-        /* Full height */
-        height: 100%;
-        /* Center and scale the image nicely */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    html {
-        font-size: 1.4rem !important;
-    }
+  .background {
+    /* The image used */
+    background-image: url("../img/wallpapers/wallpaper.png");
+
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  html {
+    font-size: 1.4rem !important;
+  }
 }
 
 body,
 html {
-    height: 100%;
+  height: 100%;
 }
-
-#services, #works, #contacts{
-    background-color: #f9f9f9;
+.carousel-indicators {
+  position: relative;
+  bottom: 100 !important;
+}
+#services,
+#works,
+#contacts {
+  background-color: #f9f9f9;
 }
 .flex-1 {
-    align-items: stretch;
-    }
-.text-font{
-    color: #333 !important;
+  align-items: stretch;
+}
+.text-font {
+  color: #333 !important;
 }
 .pic1 {
-    /* The image used */
-    background-image: url("../img/cards/pump1.png");
+  /* The image used */
+  background-image: url("../img/cards/pump1.png");
 
-    /* Full height */
-    min-height: 12rem;
-    height: 100%;
-    /* Center and scale the image nicely */
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover;
+  /* Full height */
+  min-height: 12rem;
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .pic2 {
-    /* The image used */
-    background-image: url("../img/cards/pump2.png");
+  /* The image used */
+  background-image: url("../img/cards/pump2.png");
 
-    /* Full height */
-    min-height: 12rem;
-    height: 100%;
-    /* Center and scale the image nicely */
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover;
+  /* Full height */
+  min-height: 12rem;
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .pic3 {
-    /* The image used */
-    background-image: url("../img/cards/pump3.png");
+  /* The image used */
+  background-image: url("../img/cards/pump3.png");
 
-    /* Full height */
-    min-height: 12rem;
-    height: 100%;
-    /* Center and scale the image nicely */
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover;
+  /* Full height */
+  min-height: 12rem;
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
