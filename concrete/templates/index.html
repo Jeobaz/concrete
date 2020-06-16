@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-    <!-- Required meta tags always come first -->
+    <!-- /Yandex.Metrika counter -->
     <meta charset="utf-8">
     {% load static %}
     <meta name="viewport" content="initial-scale=1, shrink-to-fit=no">
@@ -11,17 +11,48 @@
     <title>Аренда бетононасоса — компания "КачайБетон"</title>
     <meta name="description"
         content="Услуги аренды автобетононасоса, стационарного и с миксером по Тюмени и Тюменской области.">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
-    <!--Custom style-->
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <!-- Bootstrap core CSS -->
-    <link href="{% static 'css/bootstrap.min.css'%}" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="{% static 'css/mdb.min.css' %}" rel="stylesheet">
-</head>
+            <!-- Required meta tags always come first -->
+    <meta name="google-site-verification" content="sb7J9WHwIsIIsHCYnhx3BWfX628LhIgcN3gszHHf5WE" />
+        <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+       m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    
+       ym(57508126, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+       });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/57508126" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 
+</head>
 <body>
+    <style>
+        #preloader {
+          position: fixed;
+          top:0;
+          left:0;
+          right:0;
+          bottom:0;
+          background-color:#f9f9f9; 
+          z-index:99999; 
+        }
+        #status {
+
+          position:absolute;
+          left:50%; 
+          top:50%;
+          z-index:9999; 
+        }
+    </style>
+<div id="preloader"> 
+  <div class="spinner-grow text-light" id="status" role="status">
+    </div>
+</div>
+
     <!-- Модальное окно -->
     <div class="modal fade" id="ContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
         aria-hidden="true">
@@ -51,7 +82,7 @@
                         <div class="md-form">
                             <i class="fas fa-phone prefix grey-text"></i>
                             {{modalform.tel}}
-                            <label for="form8">Ваш телефон
+                            <label for="phone">Ваш телефон
                                 (необязательно)</label>
                         </div>
 
@@ -82,7 +113,7 @@
                 <div class="col-xl-1 col-lg-1 col-md-0 col-sm-0"></div>
                 <div class="col-xl-3 col-lg-4 col-md-7 col-sm-12 px-0">
                     <a class="navbar-brand p-0" href="#">
-                        <img class="align-bottom" src="{% static 'img/logo/logo0.png' %}" height="50" alt="logo">
+                        <img class="align-bottom" src="{% static 'img/logo/logo0.png' %}" height="50" alt="logo" loading="lazy"/>
                         <span class="align-bottom h2 font-weight-bold text-warning">КачайБетон</span>
                     </a>
                     <button class="navbar-toggler btn-lg float-right" type="button" data-toggle="collapse"
@@ -212,7 +243,7 @@
                                     </ul>
                                 </div>
                                 <!--Card image-->
-                                <div class="view overlay pic1 px-0">
+                                <div class="view overlay pic1 px-0 lazy">
                                     <a>
                                         <div class="mask rgba-white-slight waves-effect waves-light"></div>
                                     </a>
@@ -242,7 +273,7 @@
                                 </div>
                                 <div class="px-0">
                                     <!--Card image-->
-                                    <div class="view overlay pic2">
+                                    <div class="view overlay pic2 lazy">
                                         <a>
                                             <div class="mask rgba-white-slight waves-effect waves-light"></div>
                                         </a>
@@ -274,7 +305,7 @@
 
                                 <div class="px-0">
                                     <!--Card image-->
-                                    <div class="view overlay pic3">
+                                    <div class="view overlay pic3 lazy">
                                         <a>
                                             <div class="mask rgba-white-slight waves-effect waves-light"></div>
                                         </a>
@@ -314,109 +345,111 @@
 
                         <div id="albumCarousel" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
+                                
                                 <div class="carousel-item active">
                                     <div class="mdb-lightbox">
                                         <!-- {% for image in images %}
                                         <figure class="col-md-4">
                                             <a href="{{image.image.url}}" data-size="1020x680">
-                                                <img alt="picture" src="{{image.image.url}}" class="img-fluid">
+                                                <img loading="lazy"alt="picture" data-src="{{image.image.url}}" class="lazy img-fluid">
                                             </a>
                                         </figure>
                                     {% endfor %} -->
 
                                         <figure class="col-md-4">
-                                            <a href="{% static 'img/slides/slide1.png' %}" data-size="1020x680">
-                                                <img alt="picture" src="{% static 'img/slides/slide1.png' %}"
-                                                    class="img-fluid">
+                                            <a loading="lazy" href="{% static 'img/slides/slide7.webp' %}" data-size="1020x680">
+                                                <img alt="picture" data-src="{% static 'img/slides/slide7.webp' %}"
+                                                    class="lazy img-fluid" loading="lazy" />
                                             </a>
                                         </figure>
 
                                         <figure class="col-md-4">
-                                            <a href="{% static 'img/slides/slide2.png' %}" data-size="1020x680">
-                                                <img alt="picture" src="{% static 'img/slides/slide2.png' %}"
-                                                    class="img-fluid" />
+                                            <a loading="lazy" href="{% static 'img/slides/slide8.webp' %}" data-size="1020x680">
+                                                <img  alt="picture" data-src="{% static 'img/slides/slide8.webp' %}"
+                                                    class="lazy img-fluid" loading="lazy" />
                                             </a>
                                         </figure>
 
                                         <figure class="col-md-4">
-                                            <a href="{% static 'img/slides/slide3.png' %}" data-size="1020x680">
-                                                <img alt="picture" src="{% static 'img/slides/slide3.png' %}"
-                                                    class="img-fluid" />
+                                            <a loading="lazy" href="{% static 'img/slides/slide9.webp' %}" data-size="1020x680">
+                                                <img  alt="picture" data-src="{% static 'img/slides/slide9.webp' %}"
+                                                    class="lazy img-fluid" loading="lazy" />
                                             </a>
                                         </figure>
 
                                         <figure class="col-md-4">
-                                            <a href="{% static 'img/slides/slide4.png' %}" data-size="1020x680">
-                                                <img alt="picture" src="{% static 'img/slides/slide4.png' %}"
-                                                    class="img-fluid" />
+                                            <a loading="lazy" href="{% static 'img/slides/slide10.webp' %}" data-size="1020x680">
+                                                <img alt="picture" data-src="{% static 'img/slides/slide10.webp' %}"
+                                                    class="lazy img-fluid" loading="lazy" />
                                             </a>
                                         </figure>
 
                                         <figure class="col-md-4">
-                                            <a href="{% static 'img/slides/slide5.png' %}" data-size="1020x680">
-                                                <img alt="picture" src="{% static 'img/slides/slide5.png' %}"
-                                                    class="img-fluid" />
+                                            <a loading="lazy" href="{% static 'img/slides/slide11.webp' %}" data-size="1020x680">
+                                                <img alt="picture" data-src="{% static 'img/slides/slide11.webp' %}"
+                                                    class="lazy img-fluid" loading="lazy"  />
                                             </a>
                                         </figure>
 
                                         <figure class="col-md-4">
-                                            <a href="{% static 'img/slides/slide6.png' %}" data-size="1020x680">
-                                                <img alt="picture" src="{% static 'img/slides/slide6.png' %}"
-                                                    class="img-fluid" />
+                                            <a loading="lazy" href="{% static 'img/slides/slide12.webp' %}" data-size="1020x680">
+                                                <img alt="picture" data-src="{% static 'img/slides/slide12.webp' %}"
+                                                    class="lazy img-fluid" loading="lazy" />
                                             </a>
                                         </figure>
 
                                     </div>
                                 </div>
+                                
                                 <div class="carousel-item">
                                     <div class="mdb-lightbox">
                                         <!-- {% for image in images %}
                                         <figure class="col-md-4">
                                             <a href="{{image.image.url}}" data-size="1020x680">
-                                                <img alt="picture" src="{{image.image.url}}" class="img-fluid">
+                                                <img loading="lazy"alt="picture" data-src="{{image.image.url}}" class="lazy img-fluid">
                                             </a>
                                         </figure>
                                     {% endfor %} -->
 
                                         <figure class="col-md-4">
-                                            <a href="{% static 'img/slides/slide7.png' %}" data-size="1020x680">
-                                                <img alt="picture" src="{% static 'img/slides/slide7.png' %}"
-                                                    class="img-fluid">
+                                            <a loading="lazy" href="{% static 'img/slides/slide1.webp' %}" data-size="1020x680">
+                                                <img alt="picture" data-src="{% static 'img/slides/slide1.webp' %}"
+                                                    class="lazy img-fluid" loading="lazy" />
                                             </a>
                                         </figure>
 
                                         <figure class="col-md-4">
-                                            <a href="{% static 'img/slides/slide8.png' %}" data-size="1020x680">
-                                                <img alt="picture" src="{% static 'img/slides/slide8.png' %}"
-                                                    class="img-fluid" />
+                                            <a loading="lazy" href="{% static 'img/slides/slide2.webp' %}" data-size="1020x680">
+                                                <img alt="picture" data-src="{% static 'img/slides/slide2.webp' %}"
+                                                    class="lazy img-fluid" loading="lazy" />
                                             </a>
                                         </figure>
 
                                         <figure class="col-md-4">
-                                            <a href="{% static 'img/slides/slide9.png' %}" data-size="1020x680">
-                                                <img alt="picture" src="{% static 'img/slides/slide9.png' %}"
-                                                    class="img-fluid" />
+                                            <a loading="lazy" href="{% static 'img/slides/slide3.webp' %}" data-size="1020x680">
+                                                <img alt="picture" data-src="{% static 'img/slides/slide3.webp' %}"
+                                                    class="lazy img-fluid" loading="lazy" />
                                             </a>
                                         </figure>
 
                                         <figure class="col-md-4">
-                                            <a href="{% static 'img/slides/slide10.png' %}" data-size="1020x680">
-                                                <img alt="picture" src="{% static 'img/slides/slide10.png' %}"
-                                                    class="img-fluid" />
+                                            <a loading="lazy" href="{% static 'img/slides/slide4.webp' %}" data-size="1020x680">
+                                                <img alt="picture" data-src="{% static 'img/slides/slide4.webp' %}"
+                                                    class="lazy img-fluid" loading="lazy" />
                                             </a>
                                         </figure>
 
                                         <figure class="col-md-4">
-                                            <a href="{% static 'img/slides/slide11.png' %}" data-size="1020x680">
-                                                <img alt="picture" src="{% static 'img/slides/slide11.png' %}"
-                                                    class="img-fluid" />
+                                            <a loading="lazy" href="{% static 'img/slides/slide5.webp' %}" data-size="1020x680">
+                                                <img alt="picture" data-src="{% static 'img/slides/slide5.webp' %}"
+                                                    class="lazy img-fluid" loading="lazy" />
                                             </a>
                                         </figure>
 
                                         <figure class="col-md-4">
-                                            <a href="{% static 'img/slides/slide12.png' %}" data-size="1020x680">
-                                                <img alt="picture" src="{% static 'img/slides/slide12.png' %}"
-                                                    class="img-fluid" />
+                                            <a loading="lazy" href="{% static 'img/slides/slide6.webp' %}" data-size="1020x680">
+                                                <img alt="picture" data-src="{% static 'img/slides/slide6.webp' %}"
+                                                    class="lazy img-fluid" loading="lazy" />
                                             </a>
                                         </figure>
 
@@ -446,43 +479,43 @@
 
                                 <!--First column-->
                                 <div class="col-md-2 flex-center">
-                                    <img src="{% static 'img/logo/logo1.png' %}" class="img-fluid wow fadeIn"
-                                        data-wow-delay=".4s">
+                                    <img data-src="{% static 'img/logo/logo1.png' %}" class="lazy img-fluid wow fadeIn"
+                                        data-wow-delay=".4s" loading="lazy" />
                                 </div>
                                 <!--/First column-->
 
                                 <!--Second column-->
                                 <div class="col-md-2 flex-center">
-                                    <img src="{% static 'img/logo/logo2.png' %}" class="img-fluid wow fadeIn"
-                                        data-wow-delay=".4s">
+                                    <img data-src="{% static 'img/logo/logo2.png' %}" class="lazy img-fluid wow fadeIn"
+                                        data-wow-delay=".4s" loading="lazy" />
                                 </div>
                                 <!--/Second column-->
 
                                 <!--Third column-->
                                 <div class="col-md-2 flex-center">
-                                    <img src="{% static 'img/logo/logo3.png' %}" class="img-fluid wow fadeIn"
-                                        data-wow-delay=".4s">
+                                    <img data-src="{% static 'img/logo/logo3.png' %}" class="lazy img-fluid wow fadeIn"
+                                        data-wow-delay=".4s" loading="lazy" />
                                 </div>
                                 <!--/Third column-->
 
                                 <!--Fourth column-->
                                 <div class="col-md-2 flex-center">
-                                    <img src="{% static 'img/logo/logo4.png' %}" class="img-fluid wow fadeIn"
-                                        data-wow-delay=".4s">
+                                    <img data-src="{% static 'img/logo/logo4.png' %}" class="lazy img-fluid wow fadeIn"
+                                        data-wow-delay=".4s" loading="lazy" />
                                 </div>
                                 <!--/Fourth column-->
 
                                 <!--Fifth column-->
                                 <div class="col-md-2 flex-center">
-                                    <img src="{% static 'img/logo/logo5.png' %}" class="img-fluid wow fadeIn"
-                                        data-wow-delay=".4s">
+                                    <img data-src="{% static 'img/logo/logo5.png' %}" class="lazy img-fluid wow fadeIn"
+                                        data-wow-delay=".4s" loading="lazy" />
                                 </div>
                                 <!--/Fifth column-->
 
                                 <!--Sixth column-->
                                 <div class="col-md-2 flex-center">
-                                    <img src="{% static 'img/logo/logo6.png' %}" class="img-fluid wow fadeIn"
-                                        data-wow-delay=".4s">
+                                    <img data-src="{% static 'img/logo/logo6.png' %}" class="lazy img-fluid wow fadeIn"
+                                        data-wow-delay=".4s" loading="lazy" />
                                 </div>
                                 <!--/Sixth column-->
 
@@ -522,7 +555,7 @@
                                         <!-- Telephone -->
                                         <div class="md-form md-outline">
                                             {{modalform.tel}}
-                                            <label for="telephone">Ваш телефон (необязательно)</label>
+                                            <label for="phone">Ваш телефон (необязательно)</label>
                                         </div>
                                         <!-- Email -->
                                         <div class="md-form md-outline">
@@ -558,30 +591,111 @@
                             <h3 class="mb-3"><i class="fab fa-instagram mr-2"></i> <a
                                     href="https://www.instagram.com/beton.tyumen/"
                                     class="font-weight-bold text-dark"><u>beton.tyumen<u></a> </h3>
-
                         </div>
                     </div>
-
-
-
                 </div>
             </div>
             <div class="col-xl-1 col-lg-1 col-sm-0"></div>
         </div>
     </section>
+
     <!-- /Блок контакты -->
     <!--  SCRIPTS  -->
     <!-- JQuery -->
     <script type="text/javascript" src="{%static 'js/jquery-3.3.1.min.js'%}"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="{%static 'js/popper.min.js'%}"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="{%static 'js/bootstrap.min.js'%}"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="{%static 'js/mdb.min.js'%}"></script>
-
     <script>
-        // MDB Lightbox Init
+        document.addEventListener("DOMContentLoaded", function() {
+          var lazyloadImages = document.querySelectorAll("img.lazy");    
+          var lazyloadThrottleTimeout;
+          
+          function lazyload () {
+            if(lazyloadThrottleTimeout) {
+              clearTimeout(lazyloadThrottleTimeout);
+            }    
+            
+            lazyloadThrottleTimeout = setTimeout(function() {
+                var scrollTop = window.pageYOffset;
+                lazyloadImages.forEach(function(img) {
+                    if(img.offsetTop < (window.innerHeight + scrollTop)) {
+                      img.src = img.dataset.src;
+                      img.classList.remove('lazy');
+                    }
+                });
+                if(lazyloadImages.length == 0) { 
+                  document.removeEventListener("scroll", lazyload);
+                  window.removeEventListener("resize", lazyload);
+                  window.removeEventListener("orientationChange", lazyload);
+                }
+            }, 20);
+          }
+          
+          document.addEventListener("scroll", lazyload);
+          window.addEventListener("resize", lazyload);
+          window.addEventListener("orientationChange", lazyload);
+        });
+        document.addEventListener("DOMContentLoaded", function() {
+          var lazyloadImages;    
+        
+          if ("IntersectionObserver" in window) {
+            lazyloadImages = document.querySelectorAll(".lazy");
+            var imageObserver = new IntersectionObserver(function(entries, observer) {
+              entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                  var image = entry.target;
+                  image.classList.remove("lazy");
+                  imageObserver.unobserve(image);
+                }
+              });
+            });
+        
+            lazyloadImages.forEach(function(image) {
+              imageObserver.observe(image);
+            });
+          } else {  
+            var lazyloadThrottleTimeout;
+            lazyloadImages = document.querySelectorAll(".lazy");
+            
+            function lazyload () {
+              if(lazyloadThrottleTimeout) {
+                clearTimeout(lazyloadThrottleTimeout);
+              }    
+        
+              lazyloadThrottleTimeout = setTimeout(function() {
+                var scrollTop = window.pageYOffset;
+                lazyloadImages.forEach(function(img) {
+                    if(img.offsetTop < (window.innerHeight + scrollTop)) {
+                      img.src = img.dataset.src;
+                      img.classList.remove('lazy');
+                    }
+                });
+                if(lazyloadImages.length == 0) { 
+                  document.removeEventListener("scroll", lazyload);
+                  window.removeEventListener("resize", lazyload);
+                  window.removeEventListener("orientationChange", lazyload);
+                }
+              }, 20);
+            }
+        
+            document.addEventListener("scroll", lazyload);
+            window.addEventListener("resize", lazyload);
+            window.addEventListener("orientationChange", lazyload);
+          }
+        })
+    </script>
+    <script>
+        $(window).on('load', function () {
+            $('#preloader').fadeOut().end().delay(400).fadeOut('slow');
+        });
+    </script>
+    <script defer>
+    $(document).ready(function() {
+        $('head').append(' <link href="{% static "css/bootstrap.min.css"%}" rel="stylesheet">');   
+        $('head').append(' <link href="{% static "css/mdb.min.css" %}" rel="stylesheet">');
+        $('head').append(' <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">');
+        $('head').append(' <link rel="stylesheet" href="{% static "css/style.css" %}">');
+        
+        
+        
         $(function () {
             $("#mdb-lightbox-ui").load("{%static 'mdb-addons/mdb-lightbox-ui.html'%}");
             $('.carousel').carousel({
@@ -589,7 +703,14 @@
             })
         })
         new WOW().init();
+    })
     </script>
-</body>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="{%static 'js/popper.min.js'%}" defer></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="{%static 'js/bootstrap.min.js'%}" defer></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="{%static 'js/mdb.min.js'%}" defer></script>
 
+</body>
 </html>
