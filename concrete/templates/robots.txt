@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://xn--80aadqsd0ah9a8b.xn--p1ai/static/sitemap.xml

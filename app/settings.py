@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'concrete',
     'imagekit',
     'captcha',
+    'django.contrib.sitemaps',
+    'django.contrib.sites',
 ]
 
 MIDDLEWARE = [
@@ -142,4 +144,6 @@ RECAPTCHA_PUBLIC_KEY = '6LeubfYUAAAAAAWppkoksL-3norNME0kUubqm9d9'
 RECAPTCHA_PRIVATE_KEY = '6LeubfYUAAAAAJGpQ6vy-AtBzJNlESywRi06Tln0'
 
 RECAPTCHA_SCORE_THRESHOLD = 0.9
+
+SITE_ID = 1
 

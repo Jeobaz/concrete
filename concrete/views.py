@@ -4,6 +4,8 @@ from concrete.models import AlbumImage
 from concrete.forms import *
 from django.conf import  settings
 import requests
+from django.views.generic import TemplateView
+
 def index(request):
     #images = AlbumImage.objects.all()
     images = AlbumImage.objects.all().order_by('-id')[:6][::-1]

@@ -246,3 +246,20 @@ html {
   opacity: 0;
   transition: .3s ease-in 1s;
 }
+
+#preloader {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#f9f9f9; 
+    z-index:99999; 
+  }
+  #status {
+
+    position:absolute;
+    left:50%; 
+    top:50%;
+    z-index:9999; 
+  }
