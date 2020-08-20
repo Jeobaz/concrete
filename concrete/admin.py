@@ -1,7 +1,7 @@
 from django.contrib import admin
-from concrete.models import AlbumImage
+from concrete.models import Slide
 
-admin.site.register(AlbumImage)
+admin.site.register(Slide)
 
 # import os
 # import uuid

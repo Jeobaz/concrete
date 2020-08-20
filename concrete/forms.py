@@ -1,11 +1,11 @@
 from django import forms
-from concrete.models import AlbumImage
+from concrete.models import Slide
 from captcha.fields import ReCaptchaField
 from captcha.widgets import ReCaptchaV2Checkbox
 
 class AlbumForm(forms.ModelForm):
     class Meta:
-        model = AlbumImage
+        model = Slide
         exclude = []
 
     zip = forms.FileField(required=False)

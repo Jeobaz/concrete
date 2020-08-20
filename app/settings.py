@@ -12,14 +12,27 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 
+
+
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/3.0/howto/static-files/
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = '/static/'
+
 MEDIA_DIR = os.path.join(BASE_DIR, 'media')
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'concrete')
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static')
+]
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '&oqt-#c^1ss@+2wg&gbttgfy9wg$bj&jobp(opdbdniydj&=o*'
 
@@ -43,6 +56,7 @@ INSTALLED_APPS = [
     'captcha',
     'django.contrib.sitemaps',
     'django.contrib.sites',
+    'django_webp',
 ]
 
 MIDDLEWARE = [
@@ -69,6 +83,13 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+
+            ],
+            'context_processors': [
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.request',
+                'django_webp.context_processors.webp',
             ],
         },
     },
@@ -123,17 +144,9 @@ USE_TZ = True
 LOCALE_PATHS = (
      os.path.join(MEDIA_DIR, 'locale/'),
 )
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.0/howto/static-files/
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
-]
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = '/media/'
+
 
 EMAIL_HOST = 'smtp.beget.com'
 EMAIL_HOST_USER = 'sender@xn--80aadqsd0ah9a8b.xn--p1ai'

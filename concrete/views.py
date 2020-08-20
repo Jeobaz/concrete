@@ -1,17 +1,17 @@
 from django.shortcuts import render, redirect
 from concrete.decorators import admin_required
-from concrete.models import AlbumImage
+from concrete.models import Slide
 from concrete.forms import *
 from django.conf import  settings
 import requests
 from django.views.generic import TemplateView
 
 def index(request):
-    #images = AlbumImage.objects.all()
-    images = AlbumImage.objects.all().order_by('-id')[:6][::-1]
-    #print(images)
-    # for img in images:
-    #     print(img.url)
+    images = Slide.objects.all()
+    for image in images:
+        print(image.image)
+    print(settings.MEDIA_ROOT)
+    #images = reversed(Slide.objects.all())
     return render(request, 'index.html', context={'images': images, 'modalform': modalTicket, 'site_key': settings.RECAPTCHA_PUBLIC_KEY})
 
 # @admin_required(login_url="/")

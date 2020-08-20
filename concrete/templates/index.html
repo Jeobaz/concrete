@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     {% load static %}
+    {% load webp %}
     <meta name="viewport" content="initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="shortcut icon" href="{% static 'img/logo/icon.png' %}" type="image/png">
@@ -148,7 +149,8 @@
 
                             <!-- Grid column -->
                             <div class="col-xl-10 col-md-11">
-                                <h2 class="font-weight-bold mb-3 text-font">Услуги автобетоносмесителей, <br> автобетононасосов
+                                <h2 class="font-weight-bold mb-3 text-font">Услуги автобетоносмесителей, <br>
+                                    автобетононасосов
                                 </h2>
                             </div>
                             <!-- Grid column -->
@@ -221,7 +223,7 @@
         <div class="row container-fluid mx-0">
             <div class="col-xl-1 col-lg-1 col-md-1 col-sm-0"></div>
             <div class="col-xl-10 col-lg-12 col-md-12 col-sm-12">
-                
+
                 <div class="row justify-content-center">
                     <div class="col-xl-4 col-lg-5 col-md-5 col-sm-8 mb-1 mt-2 p-2 d-flex align-items-stretch"
                         id="card1">
@@ -406,7 +408,8 @@
                             </div>
                             <div class="card-body px-0">
                                 <div class="px-3 px-md-2 px-lg-3">
-                                    <h2 class="h2"><strong><span class="font-small-card">от </span> 400 ₽ <span class="font-small-card">/м³</span></strong></h2>
+                                    <h2 class="h2"><strong><span class="font-small-card">от </span> 400 ₽ <span
+                                                class="font-small-card">/м³</span></strong></h2>
                                     <ul class="list-unstyled pl-0">
                                         <li class="card-li-text">Высота подачи <span class="">до 100м</span> </li>
                                         <li class="card-li-text">Дальность подачи <span class="">до 300м</span></li>
@@ -457,125 +460,28 @@
 
                                 <div class="carousel-item active">
                                     <div class="mdb-lightbox">
-                                        <!-- {% for image in images %}
-                                        <figure class="col-md-4">
-                                            <a href="{{image.image.url}}" data-size="1020x680">
-                                                <img loading="lazy"alt="picture" data-src="{{image.image.url}}" class="lazy img-fluid">
-                                            </a>
-                                        </figure>
-                                    {% endfor %} -->
+                                        {% for image in images %}
+                                        <img src="{{image.image}}" >
+                                        {% endfor %}
 
-                                        <figure class="col-md-4">
-                                            <a loading="lazy" href="{% static 'img/slides/slide7.webp' %}"
-                                                data-size="1020x680">
-                                                <img alt="picture" data-src="{% static 'img/slides/slide7.webp' %}"
-                                                    class="lazy img-fluid" loading="lazy" />
+                                        <!-- <figure class="col-md-4">
+                                            <a loading="lazy" data-size="1020x680">
+                                                <picture >
+                                                    <source type="image/webp" class="img-fluid"
+                                                        srcset="{% static 'img/slides/slide7.webp' %}" 
+                                                        loading="lazy" >
+                                                    <source type="image/jpeg" src="{% webp 'img/slides/slide7.jpg' %}"
+                                                         loading="lazy" class="img-fluid"/>
+                                                        <img src="{% webp 'img/slides/slide7.jpg' %}" alt="image" class="img-fluid">
+                                                </picture>
                                             </a>
-                                        </figure>
+                                        </figure> -->
 
-                                        <figure class="col-md-4">
-                                            <a loading="lazy" href="{% static 'img/slides/slide8.webp' %}"
-                                                data-size="1020x680">
-                                                <img alt="picture" data-src="{% static 'img/slides/slide8.webp' %}"
-                                                    class="lazy img-fluid" loading="lazy" />
-                                            </a>
-                                        </figure>
-
-                                        <figure class="col-md-4">
-                                            <a loading="lazy" href="{% static 'img/slides/slide9.webp' %}"
-                                                data-size="1020x680">
-                                                <img alt="picture" data-src="{% static 'img/slides/slide9.webp' %}"
-                                                    class="lazy img-fluid" loading="lazy" />
-                                            </a>
-                                        </figure>
-
-                                        <figure class="col-md-4">
-                                            <a loading="lazy" href="{% static 'img/slides/slide10.webp' %}"
-                                                data-size="1020x680">
-                                                <img alt="picture" data-src="{% static 'img/slides/slide10.webp' %}"
-                                                    class="lazy img-fluid" loading="lazy" />
-                                            </a>
-                                        </figure>
-
-                                        <figure class="col-md-4">
-                                            <a loading="lazy" href="{% static 'img/slides/slide11.webp' %}"
-                                                data-size="1020x680">
-                                                <img alt="picture" data-src="{% static 'img/slides/slide11.webp' %}"
-                                                    class="lazy img-fluid" loading="lazy" />
-                                            </a>
-                                        </figure>
-
-                                        <figure class="col-md-4">
-                                            <a loading="lazy" href="{% static 'img/slides/slide12.webp' %}"
-                                                data-size="1020x680">
-                                                <img alt="picture" data-src="{% static 'img/slides/slide12.webp' %}"
-                                                    class="lazy img-fluid" loading="lazy" />
-                                            </a>
-                                        </figure>
 
                                     </div>
                                 </div>
 
-                                <div class="carousel-item">
-                                    <div class="mdb-lightbox">
-                                        <!-- {% for image in images %}
-                                        <figure class="col-md-4">
-                                            <a href="{{image.image.url}}" data-size="1020x680">
-                                                <img loading="lazy"alt="picture" data-src="{{image.image.url}}" class="lazy img-fluid">
-                                            </a>
-                                        </figure>
-                                    {% endfor %} -->
 
-                                        <figure class="col-md-4">
-                                            <a loading="lazy" href="{% static 'img/slides/slide1.webp' %}"
-                                                data-size="1020x680">
-                                                <img alt="picture" data-src="{% static 'img/slides/slide1.webp' %}"
-                                                    class="lazy img-fluid" loading="lazy" />
-                                            </a>
-                                        </figure>
-
-                                        <figure class="col-md-4">
-                                            <a loading="lazy" href="{% static 'img/slides/slide2.webp' %}"
-                                                data-size="1020x680">
-                                                <img alt="picture" data-src="{% static 'img/slides/slide2.webp' %}"
-                                                    class="lazy img-fluid" loading="lazy" />
-                                            </a>
-                                        </figure>
-
-                                        <figure class="col-md-4">
-                                            <a loading="lazy" href="{% static 'img/slides/slide3.webp' %}"
-                                                data-size="1020x680">
-                                                <img alt="picture" data-src="{% static 'img/slides/slide3.webp' %}"
-                                                    class="lazy img-fluid" loading="lazy" />
-                                            </a>
-                                        </figure>
-
-                                        <figure class="col-md-4">
-                                            <a loading="lazy" href="{% static 'img/slides/slide4.webp' %}"
-                                                data-size="1020x680">
-                                                <img alt="picture" data-src="{% static 'img/slides/slide4.webp' %}"
-                                                    class="lazy img-fluid" loading="lazy" />
-                                            </a>
-                                        </figure>
-
-                                        <figure class="col-md-4">
-                                            <a loading="lazy" href="{% static 'img/slides/slide5.webp' %}"
-                                                data-size="1020x680">
-                                                <img alt="picture" data-src="{% static 'img/slides/slide5.webp' %}"
-                                                    class="lazy img-fluid" loading="lazy" />
-                                            </a>
-                                        </figure>
-
-                                        <figure class="col-md-4">
-                                            <a loading="lazy" href="{% static 'img/slides/slide6.webp' %}"
-                                                data-size="1020x680">
-                                                <img alt="picture" data-src="{% static 'img/slides/slide6.webp' %}"
-                                                    class="lazy img-fluid" loading="lazy" />
-                                            </a>
-                                        </figure>
-
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>

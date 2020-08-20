@@ -6,6 +6,8 @@ from django.templatetags.static import static
 from django.contrib.sitemaps.views import sitemap
 from .sitemaps import StaticViewSitemap
 
+
+
 sitemaps = {
     "static": StaticViewSitemap,
 }
