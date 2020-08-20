@@ -1,5 +1,15 @@
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575px) {
+  .h4-card {
+    font-size: 2rem !important;
+  }
+  table th {
+    font-size: 1.7rem !important;
+  }
+  .card-li-text {
+    font-size: 1.4rem;
+    line-height: 1.5;
+  }
   .background {
     /* The image used */
     background-color: #f9f9f9;
@@ -10,11 +20,11 @@
 
   .pic1 {
     /* The image used */
-    background-image: url("../img/pump1.webp");
+    background-image: url("../img/pump1.png");
 
     /* Full height */
     min-height: 16rem !important;
-    height: 100%;
+    /*height: 100%;
     /* Center and scale the image nicely */
     background-position: left;
     background-repeat: no-repeat;
@@ -23,7 +33,7 @@
 
   .pic2 {
     /* The image used */
-    background-image: url("../img/pump2.webp");
+    background-image: url("../img/pump2.png");
 
     /* Full height */
     min-height: 16rem !important;
@@ -36,10 +46,23 @@
 
   .pic3 {
     /* The image used */
-    background-image: url("../img/pump3.webp");
+    background-image: url("../img/pump3.png");
 
     /* Full height */
     min-height: 16rem !important;
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .pic5 {
+    /* The image used */
+    background-image: url("../img/cards/mixer.png");
+
+    /* Full height */
+    min-height: 17rem !important;
     height: 100%;
     /* Center and scale the image nicely */
     background-position: left;
@@ -196,11 +219,11 @@ html {
 }
 .pic1 {
   /* The image used */
-  background-image: url("../img/cards/pump1.webp");
+  background-image: url("../img/cards/pump1.png");
 
   /* Full height */
   min-height: 12rem;
-  height: 100%;
+  /*height: 100%;
   /* Center and scale the image nicely */
   background-position: left;
   background-repeat: no-repeat;
@@ -209,7 +232,7 @@ html {
 
 .pic2 {
   /* The image used */
-  background-image: url("../img/cards/pump2.webp");
+  background-image: url("../img/cards/pump2.png");
 
   /* Full height */
   min-height: 12rem;
@@ -222,7 +245,20 @@ html {
 
 .pic3 {
   /* The image used */
-  background-image: url("../img/cards/pump3.webp");
+  background-image: url("../img/cards/pump3.png");
+
+  /* Full height */
+  min-height: 12rem;
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pic5 {
+  /* The image used */
+  background-image: url("../img/cards/mixer.png");
 
   /* Full height */
   min-height: 12rem;
@@ -254,9 +290,26 @@ html {
 }
 
 .logos {
-  transform: scale(2);
+  transform: scale(1);
+}
+.font-small-card {
+  font-size: 1.4rem;
+}
+.equal-width {
+  width: 100%;
+}
+.concrete-cell {
+  width: 50%;
 }
 
-.font-small {
-  font-size: 1.4rem;
+.concrete-cell-left {
+  width: 50%;
+  border-right: 2px solid #dee2e6;
+}
+
+.main-screen-caprton {
+  text-decoration-color: #e0e0e0 !important;
+}
+.table-hover {
+  border-bottom: 2px solid #dee2e6;
 }

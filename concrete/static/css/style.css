@@ -20,7 +20,7 @@
 
   .pic1 {
     /* The image used */
-    background-image: url("../img/pump1.webp");
+    background-image: url("../img/pump1.png");
 
     /* Full height */
     min-height: 16rem !important;
@@ -33,7 +33,7 @@
 
   .pic2 {
     /* The image used */
-    background-image: url("../img/pump2.webp");
+    background-image: url("../img/pump2.png");
 
     /* Full height */
     min-height: 16rem !important;
@@ -46,7 +46,7 @@
 
   .pic3 {
     /* The image used */
-    background-image: url("../img/pump3.webp");
+    background-image: url("../img/pump3.png");
 
     /* Full height */
     min-height: 16rem !important;
@@ -59,7 +59,7 @@
 
   .pic5 {
     /* The image used */
-    background-image: url("../img/cards/mixer.webp");
+    background-image: url("../img/cards/mixer.png");
 
     /* Full height */
     min-height: 17rem !important;
@@ -219,7 +219,7 @@ html {
 }
 .pic1 {
   /* The image used */
-  background-image: url("../img/cards/pump1.webp");
+  background-image: url("../img/cards/pump1.png");
 
   /* Full height */
   min-height: 12rem;
@@ -232,7 +232,7 @@ html {
 
 .pic2 {
   /* The image used */
-  background-image: url("../img/cards/pump2.webp");
+  background-image: url("../img/cards/pump2.png");
 
   /* Full height */
   min-height: 12rem;
@@ -245,7 +245,7 @@ html {
 
 .pic3 {
   /* The image used */
-  background-image: url("../img/cards/pump3.webp");
+  background-image: url("../img/cards/pump3.png");
 
   /* Full height */
   min-height: 12rem;
@@ -258,7 +258,7 @@ html {
 
 .pic5 {
   /* The image used */
-  background-image: url("../img/cards/mixer.webp");
+  background-image: url("../img/cards/mixer.png");
 
   /* Full height */
   min-height: 12rem;
@@ -290,7 +290,7 @@ html {
 }
 
 .logos {
-  transform: scale(1.1);
+  transform: scale(1);
 }
 .font-small-card {
   font-size: 1.4rem;
