@@ -460,12 +460,12 @@
 
                                 <div class="carousel-item active">
                                     <div class="mdb-lightbox">
-                                        {% for image in images %}
-                                        <img src="media/{{image.image}}" >
-                                        {% endfor %}
+                                        <!-- {% for image in images %}
+                                        <img src="{{ MEDIA_URL }}{{image.image}}" >
+                                        {% endfor %} -->
 
-                                        <!-- <figure class="col-md-4">
-                                            <a loading="lazy" data-size="1020x680">
+                                        <figure class="col-md-4">
+                                            <a loading="lazy" data-size="1020x680" href="{% webp 'img/slides/slide7.jpg' %}">
                                                 <picture >
                                                     <source type="image/webp" class="img-fluid"
                                                         srcset="{% static 'img/slides/slide7.webp' %}" 
@@ -475,13 +475,152 @@
                                                         <img src="{% webp 'img/slides/slide7.jpg' %}" alt="image" class="img-fluid">
                                                 </picture>
                                             </a>
-                                        </figure> -->
-
+                                        </figure>
+                                        <figure class="col-md-4">
+                                            <a loading="lazy" data-size="1020x680" href="{% webp 'img/slides/slide8.jpg' %}">
+                                                <picture >
+                                                    <source type="image/webp" class="img-fluid"
+                                                        srcset="{% static 'img/slides/slide8.webp' %}" 
+                                                        loading="lazy" >
+                                                    <source type="image/jpeg" src="{% webp 'img/slides/slide8.jpg' %}"
+                                                         loading="lazy" class="img-fluid"/>
+                                                        <img src="{% webp 'img/slides/slide8.jpg' %}" alt="image" class="img-fluid">
+                                                </picture>
+                                            </a>
+                                        </figure>
+                                        <figure class="col-md-4">
+                                            <a loading="lazy" data-size="1020x680" href="{% webp 'img/slides/slide9.jpg' %}">
+                                                <picture >
+                                                    <source type="image/webp" class="img-fluid"
+                                                        srcset="{% static 'img/slides/slide9.webp' %}" 
+                                                        loading="lazy" >
+                                                    <source type="image/jpeg" src="{% webp 'img/slides/slide9.jpg' %}"
+                                                         loading="lazy" class="img-fluid"/>
+                                                        <img src="{% webp 'img/slides/slide9.jpg' %}" alt="image" class="img-fluid">
+                                                </picture>
+                                            </a>
+                                        </figure>
+                                        <figure class="col-md-4">
+                                            <a loading="lazy" data-size="1020x680" href="{% webp 'img/slides/slide10.jpg' %}">
+                                                <picture >
+                                                    <source type="image/webp" class="img-fluid"
+                                                        srcset="{% static 'img/slides/slide10.webp' %}" 
+                                                        loading="lazy" >
+                                                    <source type="image/jpeg" src="{% webp 'img/slides/slide10.jpg' %}"
+                                                         loading="lazy" class="img-fluid"/>
+                                                        <img src="{% webp 'img/slides/slide10.jpg' %}" alt="image" class="img-fluid">
+                                                </picture>
+                                            </a>
+                                        </figure>
+                                        <figure class="col-md-4">
+                                            <a loading="lazy" data-size="1020x680" href="{% webp 'img/slides/slide11.jpg' %}">
+                                                <picture >
+                                                    <source type="image/webp" class="img-fluid"
+                                                        srcset="{% static 'img/slides/slide11.webp' %}" 
+                                                        loading="lazy" >
+                                                    <source type="image/jpeg" src="{% webp 'img/slides/slide11.jpg' %}"
+                                                         loading="lazy" class="img-fluid"/>
+                                                        <img src="{% webp 'img/slides/slide11.jpg' %}" alt="image" class="img-fluid">
+                                                </picture>
+                                            </a>
+                                        </figure>
+                                        <figure class="col-md-4">
+                                            <a loading="lazy" data-size="1020x680" href="{% webp 'img/slides/slide12.jpg' %}">
+                                                <picture >
+                                                    <source type="image/webp" class="img-fluid"
+                                                        srcset="{% static 'img/slides/slide12.webp' %}" 
+                                                        loading="lazy" >
+                                                    <source type="image/jpeg" src="{% webp 'img/slides/slide12.jpg' %}"
+                                                         loading="lazy" class="img-fluid"/>
+                                                        <img src="{% webp 'img/slides/slide12.jpg' %}" alt="image" class="img-fluid">
+                                                </picture>
+                                            </a>
+                                        </figure>
 
                                     </div>
                                 </div>
 
+                                <div class="carousel-item ">
+                                    <div class="mdb-lightbox">
+                                        <!-- {% for image in images %}
+                                        <img src="{{ MEDIA_URL }}{{image.image}}" >
+                                        {% endfor %} -->
 
+                                        <figure class="col-md-4">
+                                            <a loading="lazy" data-size="1020x680" href="{% webp 'img/slides/slide1.jpg' %}">
+                                                <picture >
+                                                    <source type="image/webp" class="img-fluid"
+                                                        srcset="{% static 'img/slides/slide1.webp' %}" 
+                                                        loading="lazy" >
+                                                    <source type="image/jpeg" src="{% webp 'img/slides/slide1.jpg' %}"
+                                                         loading="lazy" class="img-fluid"/>
+                                                        <img src="{% webp 'img/slides/slide1.jpg' %}" alt="image" class="img-fluid">
+                                                </picture>
+                                            </a>
+                                        </figure>
+                                        <figure class="col-md-4">
+                                            <a loading="lazy" data-size="1020x680" href="{% webp 'img/slides/slide2.jpg' %}">
+                                                <picture >
+                                                    <source type="image/webp" class="img-fluid"
+                                                        srcset="{% static 'img/slides/slide8.webp' %}" 
+                                                        loading="lazy" >
+                                                    <source type="image/jpeg" src="{% webp 'img/slides/slide2.jpg' %}"
+                                                         loading="lazy" class="img-fluid"/>
+                                                        <img src="{% webp 'img/slides/slide2.jpg' %}" alt="image" class="img-fluid">
+                                                </picture>
+                                            </a>
+                                        </figure>
+                                        <figure class="col-md-4">
+                                            <a loading="lazy" data-size="1020x680" href="{% webp 'img/slides/slide3.jpg' %}">
+                                                <picture >
+                                                    <source type="image/webp" class="img-fluid"
+                                                        srcset="{% static 'img/slides/slide3.webp' %}" 
+                                                        loading="lazy" >
+                                                    <source type="image/jpeg" src="{% webp 'img/slides/slide3.jpg' %}"
+                                                         loading="lazy" class="img-fluid"/>
+                                                        <img src="{% webp 'img/slides/slide3.jpg' %}" alt="image" class="img-fluid">
+                                                </picture>
+                                            </a>
+                                        </figure>
+                                        <figure class="col-md-4">
+                                            <a loading="lazy" data-size="1020x680" href="{% webp 'img/slides/slide4.jpg' %}">
+                                                <picture >
+                                                    <source type="image/webp" class="img-fluid"
+                                                        srcset="{% static 'img/slides/slide4.webp' %}" 
+                                                        loading="lazy" >
+                                                    <source type="image/jpeg" src="{% webp 'img/slides/slide4.jpg' %}"
+                                                         loading="lazy" class="img-fluid"/>
+                                                        <img src="{% webp 'img/slides/slide4.jpg' %}" alt="image" class="img-fluid">
+                                                </picture>
+                                            </a>
+                                        </figure>
+                                        <figure class="col-md-4">
+                                            <a loading="lazy" data-size="1020x680" href="{% webp 'img/slides/slide5.jpg' %}">
+                                                <picture >
+                                                    <source type="image/webp" class="img-fluid"
+                                                        srcset="{% static 'img/slides/slide5.webp' %}" 
+                                                        loading="lazy" >
+                                                    <source type="image/jpeg" src="{% webp 'img/slides/slide5.jpg' %}"
+                                                         loading="lazy" class="img-fluid"/>
+                                                        <img src="{% webp 'img/slides/slide5.jpg' %}" alt="image" class="img-fluid">
+                                                </picture>
+                                            </a>
+                                        </figure>
+                                        <figure class="col-md-4">
+                                            <a loading="lazy" data-size="1020x680" href="{% webp 'img/slides/slide6.jpg' %}">
+                                                <picture >
+                                                    <source type="image/webp" class="img-fluid"
+                                                        srcset="{% static 'img/slides/slide6.webp' %}" 
+                                                        loading="lazy" >
+                                                    <source type="image/jpeg" src="{% webp 'img/slides/slide6.jpg' %}"
+                                                         loading="lazy" class="img-fluid"/>
+                                                        <img src="{% webp 'img/slides/slide6.jpg' %}" alt="image" class="img-fluid">
+                                                </picture>
+                                            </a>
+                                        </figure>
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

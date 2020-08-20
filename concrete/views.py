@@ -20,7 +20,7 @@ def createGallery(request):
         return render(request, 'createGallery.html')
     elif request.user.is_superuser:
         for el in request.FILES.getlist('files'):
-            obj = AlbumImage(image = el)
+            obj = Slide(image = el)
             obj.save()
         return render(request, 'createGallery.html')
     else:
